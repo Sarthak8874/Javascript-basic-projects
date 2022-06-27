@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+}
+html{
+    font-size: 62%;
+}
+.video-container {
+    position: absolute;
+    top: 0; left: 0;
+ width: 100%;
+ height: 100vh;
+ object-fit: cover;
+ z-index: -2;
+
+}
+.heading{
+    position: absolute;
+     top: 50vh;
+     left: 40%;
+     font-size: 5rem;
+     color: white;
+}
+.switchbtns{
+    position: absolute;
+    bottom: 10vh;
+    left: 10%; 
+    border-radius: 10%;
+   text-transform: capitalize;
+   background-color:  rgb(43, 202, 246);
+    border: .5rem solid rgb(43, 202, 246);
+}
+.switchbtns span{
+    padding: .5rem;
+    color: white;
+    font-weight: 550;
+}
+.switchbtns .switch{
+  
+    background-color: white;
+    color:rgb(43, 202, 246) ;
+}
+
+header::after{
+    content: " ";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.7);
+    z-index: -1;
+}

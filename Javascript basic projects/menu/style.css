@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 65%;
+}
+:root{
+    --clr-gold: #c59d5f;
+}
+.menu{
+ padding-top: 2rem;
+}
+#btn{
+    border: .2rem solid var(--clr-gold);
+    background-color: white;
+    border-radius: .6rem;
+    color: var(--clr-gold);
+    padding: .3rem .6rem;
+}
+#btn-active,#btn:hover{
+   border: none;
+    background-color: var(--clr-gold);
+    border-radius: .6rem;
+    color: white;
+    padding: .3rem .6rem;
+}
+.menu{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+  }
+.underline {
+    width: 9rem;
+    height: 0.35rem;
+    background:var(--clr-gold);
+    margin-left: auto;
+    margin-right: auto;
+  }
+.button-container{
+    text-align: center;
+}
+.button-container button{
+    font-size: 1.8rem;
+    margin: 0 .5rem;
+}
+.menuitems{
+    display: grid;
+    gap: 2.8rem;
+    grid-template-columns: 50% 50%;
+    margin: 0 8rem;
+    padding-top: 3rem;
+}
+.menuitems .single-item{
+    display: flex;
+
+}
+.single-item .img-container img{
+    object-fit: cover;
+  height: 20rem;
+  width: 30rem;
+  border: 0.25rem solid var(--clr-gold);
+    border-radius: .7rem;
+}
+.menuitems .single-item .item-info{
+    padding: 2rem;
+}
+.menuitems .single-item .item-info header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.menuitems .single-item .item-info .price{
+    padding-right: 2rem;
+    color: var(--clr-gold);
+}
+.menuitems .single-item .item-info p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: gray;
+}
+
+
+
+
+
+
+/* media querry */
+@media (max-width:1300px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+
+
+@media (max-width:1050px){
+    html{
+        font-size: 40%;
+    }
+}
+
+
+@media (max-width:800px){
+    html{
+        font-size: 60%;
+    }
+  .menuitems{
+    grid-template-columns: 100%;
+  }
+  .menuitems .single-item{
+    flex-direction: column;
+}
+.single-item .img-container{
+   text-align: center;
+}
+.menuitems .single-item .item-info{
+    text-align: center;
+    padding: 2rem 4%;
+}
+.menuitems .single-item .item-info header{
+   justify-content: space-between;
+}
+.single-item .img-container img{
+  width: 40rem;
+}
+
+}
+@media (max-width:480px){
+    html{
+        font-size: 50%;
+    }
+    .single-item .img-container img{
+        width: 40rem;
+      }
+      .menuitems .single-item .item-info header{
+        justify-content: space-between;
+     }
+}

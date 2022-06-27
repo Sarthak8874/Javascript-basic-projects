@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html{
+    background: #ececec; 
+    font-size: 62%;
+}
+.review{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 50rem;
+}
+.review .title h2{
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    text-decoration: underline;
+    color: #142d4c;
+}
+.review .article{
+    height: 30rem;
+    margin-top: 1rem;
+    padding: 4rem;
+    box-shadow: 0rem 0rem .5rem  #385170;
+}
+.review .article .img-container{
+ height: 13rem;
+}
+.review .article .img-container img{
+    border-radius: 50%;
+    width: 13rem;
+    height: 13rem;
+}
+.review .article .author{
+    padding: 1rem 0 0 0;
+    font-size: 1.8rem;
+    height: 2rem;
+    color: #142d4c; 
+    text-transform: capitalize;
+}
+.review .article .job{
+    height: 2rem;
+    padding: .3rem 0 1rem 0;
+    font-size: 1.2rem;
+    color: #385170; 
+    text-transform: capitalize;
+}
+.review .article .info{
+    font-size: 1.5rem;
+    color: #385170; 
+    text-transform: capitalize;
+    height: 9rem;
+}
+.review .article .button-container{
+    margin-top:2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.review .article .button-container button{
+    border: none;
+    color: #142d4c;
+}
